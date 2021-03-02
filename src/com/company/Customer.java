@@ -1,7 +1,5 @@
 package com.company;
 
-import java.util.Random;
-
 public class Customer extends Human{
         private int money;
 
@@ -21,6 +19,14 @@ public class Customer extends Human{
 
         public int getMoney() {
                 return money;
+        }
+
+        public int givingCash(int money){
+                this.money = money;
+                return money;
+        }
+
+        private void givingCash(){
         }
 
         @Override

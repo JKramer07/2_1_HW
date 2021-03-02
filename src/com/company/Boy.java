@@ -26,8 +26,17 @@ public final class Boy extends Customer{
     }
 
     @Override
+    public int givingCash(int money) {
+        super.givingCash(money);
+        return money;
+    }
+
+    @Override
     public String getInfo() {
         return super.getInfo()+"\nName: "+name+"\nMarket: "+market+
                 "\nSeller name: "+seller.getName()+"\nSeller position: "+seller.getPosition();
+    }
+    public String printInfo(){
+        return "Name: "+name+"\nMarket: "+market;
     }
 }
